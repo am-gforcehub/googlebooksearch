@@ -5,16 +5,16 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, TextArea, FormBtn } from "../components/Form";
+import { Input, FormBtn } from "../components/Form";
 
 class Books extends Component {
   state = {
     books: [],
     title: "",
     author: "",
-    description: "",
-    imageURL: "",
-    linkURL: ""
+    synoposis: ""
+    // imageURL: "",
+    // linkURL: ""
   };
 
   componentDidMount() {
@@ -28,9 +28,9 @@ class Books extends Component {
           books: res.data,
           title: "",
           author: "",
-          description: "",
-          imageURL: "",
-          linkURL: ""
+          synopsis: ""
+          // imageURL: "",
+          // linkURL: ""
         })
       )
       .catch(err => console.log(err));
@@ -55,9 +55,9 @@ class Books extends Component {
       API.saveBook({
         title: this.state.title,
         author: this.state.author,
-        description: this.state.description,
-        imageURL: this.state.imageURL,
-        linkURL: this.state.linkURL
+        synopsis: this.state.description
+        // imageURL: this.state.imageURL,
+        // linkURL: this.state.linkURL
       })
         .then(res => this.loadBooks())
         .catch(err => console.log(err));
@@ -68,9 +68,9 @@ class Books extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
+          <Col size="md-8">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>SEARCH BOOKS</h1>
             </Jumbotron>
             <form>
               <Input
@@ -79,7 +79,7 @@ class Books extends Component {
                 name="title"
                 placeholder="Title (required)"
               />
-              <Input
+              {/* <Input
                 value={this.state.author}
                 onChange={this.handleInputChange}
                 name="author"
@@ -90,7 +90,7 @@ class Books extends Component {
                 onChange={this.handleInputChange}
                 name="description"
                 placeholder="Description (Optional)"
-              />
+              /> */}
               <FormBtn
                 disabled={!this.state.author}
                 onClick={this.handleFormSubmit}

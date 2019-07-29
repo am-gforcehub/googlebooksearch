@@ -1,0 +1,11 @@
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url("./images/green-green-leaf-nature-66869.jpg");
+}
