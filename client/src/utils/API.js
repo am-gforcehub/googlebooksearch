@@ -1,18 +1,8 @@
 import axios from "axios";
-import APIKEY from "../../src/config/keys";
-const URL = "https://www.googleapis.com/books/v1/volumes?q=";
+const KEY =
+  process.env.googlebookssearch || "AIzaSyC--Ap_sGnu-HvqvWuZSKxFssWIArOMvUU";
 
 export default {
-  searchBooks: function(query) {
-    console.log(query);
-    return axios.get(URL + query + APIKEY);
-  },
-
-  //   searchBook: function(term) {
-  //     // return axios.get("/api/search/" + term);
-  //      return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + term + "&key=" + KEY);
-  //   }
-  // };
   // Gets all books
   getBooks: function() {
     return axios.get("/api/books");
@@ -28,5 +18,11 @@ export default {
   // Saves a book to the database
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
+  },
+  searchBook: function(term) {
+    // return axios.get("/api/search/" + term);
+    return axios.get(
+      "https://www.googleapis.com/books/v1/volumes?q=" + term + "&key=" + KEY
+    );
   }
 };

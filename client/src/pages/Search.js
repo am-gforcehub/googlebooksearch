@@ -10,7 +10,7 @@ class Books extends Component {
   state = {
     author: "",
     books: [],
-    query: "",
+    term: "",
     title: "",
     saved: false,
     synopsis: ""
@@ -30,7 +30,7 @@ class Books extends Component {
         synopsis: book.volumeInfo.description
       };
     });
-    this.setState({ books: foundBooks, query: "" });
+    this.setState({ books: foundBooks, term: "" });
     // }
   };
 
@@ -67,8 +67,8 @@ class Books extends Component {
 
   handleSearch = event => {
     event.preventDefault();
-    if (this.state.query {
-      API.searchBook(this.state.query)
+    if (this.state.term) {
+      API.searchBook(this.state.term)
         .then(res => this.loadBooks(res.data.items))
         .catch(err => console.log(err));
     }
@@ -86,15 +86,15 @@ class Books extends Component {
               <div className="row">
                 <div className="col-md-11">
                   <Input
-                    value={this.state.query}
+                    value={this.state.term}
                     onChange={this.handleInputChange}
-                    name="query"
+                    name="term"
                     placeholder="Search for a book"
                   />
                 </div>
                 <div className="col-md-1">
                   <FormBtn
-                    disabled={!this.state.query}
+                    disabled={!this.state.term}
                     onClick={this.handleSearch}
                   >
                     Search
@@ -111,7 +111,7 @@ class Books extends Component {
                 {this.state.books.map((book, i) => (
                   <ListItem key={i}>
                     <a
-                      href={book}
+                      href={book.previewLink}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
