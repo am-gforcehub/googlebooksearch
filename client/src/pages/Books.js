@@ -5,7 +5,7 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, FormBtn } from "../components/Form";
+import { Input, TextArea, FormBtn } from "../components/Form";
 
 class Books extends Component {
   state = {
@@ -51,11 +51,11 @@ class Books extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if (this.state.title) {
+    if (this.state.title && this.state.author) {
       API.saveBook({
         title: this.state.title,
         author: this.state.author,
-        synopsis: this.state.description
+        synopsis: this.state.synopsis
         // imageURL: this.state.imageURL,
         // linkURL: this.state.linkURL
       })
@@ -79,20 +79,20 @@ class Books extends Component {
                 name="title"
                 placeholder="Title (required)"
               />
-              {/* <Input
+              <Input
                 value={this.state.author}
                 onChange={this.handleInputChange}
                 name="author"
                 placeholder="Author (required)"
               />
               <TextArea
-                value={this.state.description}
+                value={this.state.synopsis}
                 onChange={this.handleInputChange}
-                name="description"
-                placeholder="Description (Optional)"
-              /> */}
+                name="synopsis"
+                placeholder="Synopsis (Optional)"
+              />
               <FormBtn
-                disabled={!this.state.author}
+                disabled={!this.state.author && this.state.title}
                 onClick={this.handleFormSubmit}
               >
                 Submit Book
