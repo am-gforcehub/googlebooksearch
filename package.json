@@ -14,7 +14,7 @@
     "heroku-postbuild": "npm run build"
   },
   "engines": {
-    "node": "10.15.3"
+    "node": ">=0.12"
   },
   "author": "",
   "license": "ISC",
