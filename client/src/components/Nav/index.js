@@ -1,17 +1,15 @@
 import React from "react";
 import "./style.css";
+const logo = require("../../images/worm2.png");
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navBar">
+    <nav className="navbar navbar-expand-lg navMain">
       <a className="navbar-brand navTitle" href="/">
         Books 4 Bookworms
       </a>
       <span>
-        <img
-          src="http://clipart-library.com/images/8iG68A8oT.png"
-          alt="bookworm"
-        />
+        <img src={logo} alt="worm" />
       </span>
       <a className="navbar-brand subtitle" href="/">
         SEARCH

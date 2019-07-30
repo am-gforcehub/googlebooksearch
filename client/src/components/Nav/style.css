@@ -1,4 +1,4 @@
-#navBar {
+.navMain {
   background-image: url("../../images/green-green-leaf-nature-66869.jpg");
   margin: 0;
   width: 100%;
@@ -11,6 +11,15 @@
 
 .navTitle {
   font-size: 25px;
+  color: #e84303;
+}
+
+img {
+  width: 200px;
+}
+
+.subtitle {
+  color: #e84303;
 }
 
 /* .sticky {
