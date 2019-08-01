@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.9e033d38.chunk.css",
-  "main.js": "/static/js/main.ac564aba.chunk.js",
-  "main.js.map": "/static/js/main.ac564aba.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.cc9da5a2.chunk.js": "/static/js/2.cc9da5a2.chunk.js",
-  "static/js/2.cc9da5a2.chunk.js.map": "/static/js/2.cc9da5a2.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.0024d567f2776bdd23aef3349d0ca8fc.js": "/precache-manifest.0024d567f2776bdd23aef3349d0ca8fc.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.9e033d38.chunk.css.map": "/static/css/main.9e033d38.chunk.css.map",
-  "static/media/index.css": "/static/media/green-green-leaf-nature-66869.fdf42b17.jpg",
-  "static/media/worm2.png": "/static/media/worm2.eea96765.png"
+  "main.css": "/am-gforcehub/googlebooksearch.git/static/css/main.3d4c3b62.chunk.css",
+  "main.js": "/am-gforcehub/googlebooksearch.git/static/js/main.fe856ddb.chunk.js",
+  "main.js.map": "/am-gforcehub/googlebooksearch.git/static/js/main.fe856ddb.chunk.js.map",
+  "runtime~main.js": "/am-gforcehub/googlebooksearch.git/static/js/runtime~main.7e33d572.js",
+  "runtime~main.js.map": "/am-gforcehub/googlebooksearch.git/static/js/runtime~main.7e33d572.js.map",
+  "static/js/2.cc9da5a2.chunk.js": "/am-gforcehub/googlebooksearch.git/static/js/2.cc9da5a2.chunk.js",
+  "static/js/2.cc9da5a2.chunk.js.map": "/am-gforcehub/googlebooksearch.git/static/js/2.cc9da5a2.chunk.js.map",
+  "index.html": "/am-gforcehub/googlebooksearch.git/index.html",
+  "precache-manifest.9ed387dcaa4f42308b6b436e00bb62cd.js": "/am-gforcehub/googlebooksearch.git/precache-manifest.9ed387dcaa4f42308b6b436e00bb62cd.js",
+  "service-worker.js": "/am-gforcehub/googlebooksearch.git/service-worker.js",
+  "static/css/main.3d4c3b62.chunk.css.map": "/am-gforcehub/googlebooksearch.git/static/css/main.3d4c3b62.chunk.css.map",
+  "static/media/index.css": "/am-gforcehub/googlebooksearch.git/static/media/green-green-leaf-nature-66869.fdf42b17.jpg",
+  "static/media/worm2.png": "/am-gforcehub/googlebooksearch.git/static/media/worm2.eea96765.png"
 }
