@@ -1,9 +1,8 @@
 {
   "name": "mern",
   "version": "1.0.0",
-  "description": "google books search",
+  "description": "",
   "main": "server.js",
-  // "homepage": "https://books4bookworms.herokuapp.com/",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
